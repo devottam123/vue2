@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
     <div id="vue-app">
         <h1> Data Binding </h1>
-        <a href="{{ website }}"></a>
+        <!-- <a v-bind:href="website">The Net Ninja</a> -->
+        <a :href="website">The Net Ninja</a>
+        <!-- Data Binding is used to bind the 'data' values which is the dynamic data stored in Vue instance into attributes -->
+        <input type="text" v-bind:value="name">
+        <input type="text" v-bind:value="job">
+        <p v-html="websiteTag"></p>
     </div>
 </body>
 <script src="app.js"></script>
