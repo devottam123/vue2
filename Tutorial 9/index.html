@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computed Properties</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>Computed Properties</h1>
+        <button v-on:click="a++">Add to A</button>
+        <button v-on:click="b++">Add to B</button>
+        <p>A - {{ a }}</p>
+        <p>B - {{ b }}</p>
+        <p>Age + A = {{ addToA }}</p>
+        <p>Age + B = {{ addToB }}</p>
+        <!-- Methods are run directly without even calling them and needed to be called with parenthesis, for eg., addToA() in HTML file -->
+        <!-- whereas, Computed Properties are run not directly and needed to be called explicitly & are called without parenthesis, for eg., addToA in HTML file-->
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
